@@ -1,0 +1,140 @@
+body{
+	color: #40514E
+	margin: 0px;
+	text-align: center;
+	font-family: 'Merriweather', serif;
+
+}
+h1{
+	color: #66BFBF;
+	font-size: 5.625rem; 
+	margin: 50px auto 0 auto;
+	font-family: 'Sacramento', cursive;
+}
+h2{
+	color: #66BFBF;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2.5rem;
+	font-weight: normal;
+}
+h3{
+	color: #11999B;
+	font-family: 'Montserrat', sans-serif;
+}
+.top_container{
+	background-color: #E4F9F5;
+	position: relative;
+	padding-top: 100px;
+
+}
+
+
+.middle_container
+{
+	
+}
+.bottom_container
+{
+	}
+
+.skill-row{
+	width: 55%;
+	margin: 60px auto 60px auto;
+	display: inline-block;
+	text-align: left;
+	line-height: 2;
+	background-color: #E4F9F5;
+	border-style: none;
+	padding: 12px;
+	border-radius: 10px;
+}
+.bottom-cloud{
+	position: absolute;
+	left:250px;
+	bottom: 350px;
+	width: 10%;
+
+}
+.top-cloud{
+	position: absolute;
+	right: 250px;
+	top:120px;
+	width: 10%;
+
+}
+.body{
+	margin: 0px;
+}
+.sm{
+	width: 50%;
+	border-radius: 50%;
+}
+.ml{
+	width: 25%;
+	float: left;
+	margin-right:40px;
+	margin-top:45px;
+
+
+}
+.gcloud{
+	width:25%;
+	float: left;
+	margin-right: 30px;
+	margin-top: 55px;
+}
+.webd{
+	width:25%;
+	float: right;
+	margin-left:40px;
+	margin-top:45px;
+}
+hr{
+	border-style: none;
+	border-top-style: dotted;
+	border-color: grey;
+	border-width: 5px;
+	width: 10%;
+}
+
+.profile{
+	width: 400px;
+	height: 430px;
+    border-radius: 20px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.2), 0 1px 5px 0 rgba(0,0,0,0.12);
+    background: #fff;
+    margin: 50px auto 50px auto;
+    padding-top: 10px;
+}
+#edetails{
+	
+}
+.row{
+	margin: 20%;
+}
+
+.fa {
+  padding: 15px;
+  font-size: 30px;
+  width: 10px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 40%; 
+}
+.fa-linkedin {
+  color: black;
+}
+.fa-twitter {
+  color: black;
+}
+.fa:hover{
+    color: #66BFBF;
+}
+.fa-github{
+	color: black;
+}
+.edetailspara{
+	padding-top: 200px;
+}
+.image-main{
+}
