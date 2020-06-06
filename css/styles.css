@@ -27,15 +27,14 @@ h3{
 	padding-top: 100px;
 
 }
-
-
-.middle_container
+.middle-container
 {
 	margin: 100px 0px;
 }
-.bottom_container
+.bottom-container
 {
-	margin:100px 0px;
+	background-color: #E4F9F5;
+	padding: 40px 0px 10px;
 	}
 
 .skill-row{
@@ -85,21 +84,31 @@ h3{
 	float: left;
 	margin-right:40px;
 	margin-top:45px;
-
-
 }
+
 .gcloud{
 	width:25%;
 	float: left;
 	margin-right: 30px;
 	margin-top: 55px;
 }
+
 .webd{
 	width:25%;
 	float: right;
 	margin-left:40px;
 	margin-top:45px;
 }
+.footer-link{
+	color: #11999e;
+	font-family: 'Montserrat', sans-serif;
+	text-decoration: none;
+
+}
+.footer-link:hover{
+	color: #008080;
+}
+
 hr{
 	border-style: none;
 	border-top-style: dotted;
@@ -145,4 +154,31 @@ hr{
 .contactmassage{
 	width: 30%;
 	margin: 40px auto 60px;
+}
+
+.btn {
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb#b2fcff, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
 }
