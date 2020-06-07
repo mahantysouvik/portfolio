@@ -56,13 +56,14 @@ h3{
 
 }
 .edatails{
-	
+	text-align: center;
 	width: 60%;
 	margin: 100px auto 100px auto;
 	text-align: left;
 	line-height: 2;
 	background-color: #E4F9F5;
 	border-radius: 10px;
+	padding: 50px;
 }
 
 .top-cloud{
@@ -70,8 +71,12 @@ h3{
 	right: 250px;
 	top:120px;
 	width: 10%;
-
 }
+
+.row{
+  margin:10%;
+}
+
 .body{
 	margin: 0px;
 }
