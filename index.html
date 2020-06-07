@@ -19,7 +19,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 
-<nav class="navbar navbar-expand-lg navbar-light bg-info">
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-info" style="padding: 18px;">
   <a class="navbar-brand" href="#">
     <img style="border-radius: 40%;"src="image/df.jpg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
     SOUVIK
@@ -30,13 +30,13 @@
   <div class="collapse navbar-collapse" id="dd2">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link" href="#">ABOUT ME</a>
+        <a class="nav-link" href="#about">ABOUT ME</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">MY SKILLS</a>
+        <a class="nav-link" href="#myskill">MY SKILLS</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">MY EDUCATION</a>
+        <a class="nav-link" href="#myedu">MY EDUCATION</a>
       </li>
       
       <li class="nav-item dropdown">
@@ -44,11 +44,11 @@
           MORE
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">CV</a>
+          <a class="dropdown-item" download href="#">CV</a>
           <a class="dropdown-item" href="#">MY WORK</a>
 
           <li class="nav-item">
-        <a class="nav-link" href="#">CONTACT ME</a>
+        <a class="nav-link" href="#contactme">CONTACT ME</a>
       </li>
         </div>
       </li>
@@ -64,7 +64,7 @@
 
 	</div>
 	<div class="middle-container">
-  <div class="profile">
+  <div class="profile" id="about">
     <img class="sm" src="image/pic.jpg" alt="Souvik Mahanty">
     <h2>Souvik Mahanty</h2>
     <p>Data Science Enthusiast<p>
@@ -77,7 +77,7 @@
   <hr>
   <div class="skills">
     <h2>My Skills.</h2>
-    <div class="skill-row">
+    <div class="skill-row" id="myskill">
       <img class="ml" src="image/ml.jpeg" alt="ml">
       <h3>Data Science and Machine Learning</h3>
       <p >I am very proficient at Python basic and numpy,Matplotlib,Pandas libraries. i have done Data analysis on verious data set and use visulization tool to visulise the result.</p>
@@ -94,7 +94,7 @@
     </div>
   </div>
   <hr>
-    <div class="edatails">
+    <div class="edatails" id="myedu">
 
     <table cellspacing="60">
       <thead>
@@ -121,7 +121,7 @@
   </div>
  
   <hr>
-  <div class="contact-me">
+  <div class="contact-me" id="contactme">
     <h2>Get In Touch</h2>
     <p class="contactmassage">Love to code and develop useful softwares? Wanna collaborate on a project? Contact me via any of the below mentioned details.</p>
     <div class="edatails">
