@@ -72,9 +72,16 @@ h3{
 	top:120px;
 	width: 10%;
 }
+.image-main{
+	width: 100%;
+}
 
 .row{
   margin:10%;
+}
+
+.nav-item{
+	padding: 0px 18px;
 }
 
 .body{
