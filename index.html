@@ -1,162 +1,278 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>Souvik Mahanty</title>
-
-
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<link rel="icon" type="text/css" href="image/logo.png">
-	
-	<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:ital,wght@1,300&family=Sacramento&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Souvik Mahanty | Software Development Engineer</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="image/logo.png">
 </head>
-
-
 <body>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-
-<nav class="navbar  navbar-expand-lg navbar-dark bg-info" style="padding: 18px;">
-  <a class="navbar-brand" href="#">
-    <img style="border-radius: 40%;"src="image/df.jpeg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
-    SOUVIK
-  </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#dd2" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="dd2">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="#about">ABOUT ME</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#myskill">MY SKILLS</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#myedu">MY EDUCATION</a>
-      </li>
-      
-	
-          <li class="nav-item">
-        <a class="nav-link" href="#contactme">CONTACT ME</a>
-      </li>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <span class="logo-text">Souvik<span class="accent">.</span></span>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-      </li>
-    </ul>
-  </div>
-</nav>
-	<div class="top_container">
-		<img class="top-cloud" src="image/cloud.svg" alt="cloud-img">
-		<h1>I'm Souvik.</h1>
-		<h2>a programmer.</h2>
-		<img class="bottom-cloud" src="image/cloud.svg" alt="cloud-img">
-		<img class="image-main"src="image/land.svg" alt="land-img">
+    </nav>
 
-	</div>
-	<div class="middle-container">
-  <div class="profile" id="about">
-    <img class="sm" src="image/pic.jpeg" alt="Souvik Mahanty">
-    <h2>Souvik Mahanty</h2>
-    <p>Data Science Enthusiast<p>
-    <p>kolkata, IN</p>
-    <a href="https://www.linkedin.com/in/souvik-mahanty-38508b140/" class="fa fa-linkedin" target="_blank" rel="noopener" ></a>
-    <a href="https://twitter.com/SouvikMahanty" class="fa fa-twitter" target="_blank" rel="noopener" ></a>
-    <a href="https://github.com/mahantysouvik" class="fa fa-github" target="_blank" rel="noopener" ></a>
-    <p><a href="ww"></a></p>
-  </div>
-  <hr>
-  <div class="skills">
-    <h2>My Skills.</h2>
-    <div class="skill-row" id="myskill">
-      <img class="ml" src="image/ml.jpeg" alt="ml">
-      <h3>Data Science and Machine Learning</h3>
-      <p >I am very proficient at Python basic and numpy,Matplotlib,Pandas libraries. i have done Data analysis on verious data set and use visulization tool to visulise the result.</p>
-    </div>
-    <div class="skill-row">
-      <img class="webd" src="image/webd.png" alt="webd">
-      <h3>Web Devolopment</h3>
-      <p>I have a profound knowledge on Html,Css,Bootstrap,Java script.And I have started my work on Backend. </p>
-    </div>
-    <div class="skill-row">
-      <img class="gcloud" src="image/gcloud.jpg" alt="gcloud">
-      <h3>Cloud</h3>
-      <p>I have a done some cloud courses and learning it side by side. I worked on Ibm Cloud while working on Data Science project. </p>
-    </div>
-  </div>
-  <hr>
-    <div class="edatails" id="myedu">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="greeting">Hi, I'm</span>
+                    <span class="name">Souvik Mahanty</span>
+                </h1>
+                <div class="typing-container">
+                    <p class="hero-subtitle">I'm a <span class="typed-text"></span><span class="cursor"></span></p>
+                </div>
+                <p class="hero-description">Software Development Engineer at Infoedge, passionate about creating innovative solutions with modern technologies.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Get in Touch</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#about" class="btn btn-secondary">
+                        <span>Learn More</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
 
-    <table cellspacing="60">
-      <thead>
-        <tr>
-          <td><h3>EDUCATION</td><h3>
-        </tr>
-      </thead>
-      <tbody>
-        <tr class="row">
-          <td>2009-2018</td>
-          <td>Secondary and Higher Secondary Education-<br>
-          Bishnupur High School<br>
-          <br></td>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <img src="image/pic.jpeg" alt="Souvik Mahanty">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>Hello! I'm Souvik Mahanty</h3>
+                    <p class="about-description">
+                        I'm a <strong>Software Development Engineer</strong> at Infoedge, based in Noida, India. With a passion for technology and innovation, I specialize in building robust and scalable solutions using modern tech stacks.
+                    </p>
+                    <p class="about-description">
+                        My expertise spans across <strong>Data Science, Machine Learning, Web Development, and Cloud Technologies</strong>. I love solving complex problems and turning ideas into reality through clean, efficient code.
+                    </p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Noida, India</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-briefcase"></i>
+                            <span>SDE at Infoedge</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>souvikmahanty15@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/souvik-mahanty-38508b140/" target="_blank" rel="noopener" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/mahantysouvik" target="_blank" rel="noopener" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://twitter.com/SouvikMahanty" target="_blank" rel="noopener" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Skills</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Technologies and tools I work with</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Data Science & ML</h3>
+                    <p>Proficient in Python with expertise in NumPy, Pandas, Matplotlib, and Scikit-learn. Experienced in data analysis, visualization, and building machine learning models.</p>
+                    <div class="skill-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Pandas</span>
+                        <span class="tag">NumPy</span>
+                        <span class="tag">ML</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Strong foundation in HTML, CSS, Bootstrap, and JavaScript. Building responsive and interactive web applications with modern frameworks and best practices.</p>
+                    <div class="skill-tags">
+                        <span class="tag">HTML/CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Bootstrap</span>
+                        <span class="tag">Backend</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud Technologies</h3>
+                    <p>Hands-on experience with cloud platforms and services. Worked extensively with IBM Cloud for deploying and managing data science projects.</p>
+                    <div class="skill-tags">
+                        <span class="tag">IBM Cloud</span>
+                        <span class="tag">Cloud Services</span>
+                        <span class="tag">Deployment</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        </tr>
-        <tr class="row">
-          <td>2018-2022</td>
-          <td>Bachelor of Technology in Information Technology-<br>
-          Netaji Subhash Engineering College<br></td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
- 
-  <hr>
-  <div class="contact-me" id="contactme">
-    <h2>Get In Touch</h2>
-    <p class="contactmassage">Love to code and develop useful softwares? Wanna collaborate on a project? Contact me via any of the below mentioned details.</p>
-    <div class="edatails">
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Education</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2018 - 2022</div>
+                    <div class="timeline-content">
+                        <h3>Bachelor of Technology</h3>
+                        <h4>Information Technology</h4>
+                        <p>Netaji Subhash Engineering College</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2009 - 2018</div>
+                    <div class="timeline-content">
+                        <h3>Higher Secondary Education</h3>
+                        <h4>Secondary & Senior Secondary</h4>
+                        <p>Bishnupur High School</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <table cellspacing="60">
-      <thead>
-        <tr class="row">
-          <td><h3>CONTACT DETAILS</td><h3>
-        </tr>
-      </thead>
-      <tbody>
-          <tr class="row">
-              <td><em>ADDRESS</em></td>
-              <td>
-                <p>Jhaparmore Math, Bishnupur, Bankura.<br>
-                <p>Bishnupur- 722122 <br></p>
-              </td>
-            </tr>
-            <tr class="row">
-              <td><em>PHONE NUMBER</em>
-              <p>8617383523</p></td>
-            </tr>
-            <tr class="row">
-              <td><em>EMAIL ID</em></td>
-              <td>souvikmahanty15@gmail.com<br></td>
-            </tr>
-          </tbody>
-    </table>
-  </div>
-<br>
-    <a class="btn" href="mailto:souvikmahanty15@gmail.com">CONTACT ME</a>
-  </div>
-</div>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Love to code and develop useful software? Want to collaborate on a project? Let's connect!</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Address</h3>
+                        <p>Jhaparmore Math, Bishnupur</p>
+                        <p>Bankura, West Bengal - 722122</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>Phone</h3>
+                        <p><a href="tel:+918617383523">+91 8617383523</a></p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <p><a href="mailto:souvikmahanty15@gmail.com">souvikmahanty15@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="contact-cta">
+                    <a href="mailto:souvikmahanty15@gmail.com" class="btn btn-primary btn-large">
+                        <span>Send me an Email</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<div class="bottom-container">
-<br>
-<br>
-  <a class="footer-link" href="https://www.linkedin.com/in/souvik-mahanty-38508b140/">LinkedIn</a><br><br>
-  <p style="font size:0.75rem ">© 2021 Souvik Mahanty.</p>
-</div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/souvik-mahanty-38508b140/" target="_blank" rel="noopener" class="footer-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/mahantysouvik" target="_blank" rel="noopener" class="footer-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://twitter.com/SouvikMahanty" target="_blank" rel="noopener" class="footer-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+                <p class="footer-text">© 2025 Souvik Mahanty. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
 </body>
 </html>
