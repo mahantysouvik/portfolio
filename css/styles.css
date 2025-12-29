@@ -21,6 +21,7 @@
     --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     --gradient-secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
     --gradient-accent: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    --gradient-gold: linear-gradient(135deg, #f7971e 0%, #ffd200 100%);
     
     /* Spacing */
     --section-padding: 100px 0;
@@ -507,37 +508,39 @@ body {
 }
 
 .timeline {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
     position: relative;
+    padding: 20px 0;
 }
 
 .timeline::before {
     content: '';
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 2px;
+    left: 200px;
+    top: 0;
+    width: 3px;
     height: 100%;
     background: linear-gradient(180deg, var(--primary-color), var(--secondary-color));
 }
 
 .timeline-item {
-    display: grid;
-    grid-template-columns: 1fr 40px 1fr;
-    gap: 30px;
-    margin-bottom: 50px;
+    display: flex;
+    gap: 40px;
+    margin-bottom: 60px;
     position: relative;
+    align-items: flex-start;
 }
 
-.timeline-item:nth-child(even) .timeline-date {
-    grid-column: 3;
-    text-align: left;
-}
-
-.timeline-item:nth-child(even) .timeline-content {
-    grid-column: 1;
-    grid-row: 1;
+.timeline-date {
+    width: 160px;
+    flex-shrink: 0;
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 15px;
+    text-align: right;
+    padding-top: 8px;
+    line-height: 1.4;
 }
 
 .timeline-dot {
@@ -545,31 +548,31 @@ body {
     height: 20px;
     background: var(--gradient-primary);
     border-radius: 50%;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    flex-shrink: 0;
     border: 4px solid var(--bg-darker);
+    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.2);
+    margin-top: 8px;
     z-index: 1;
 }
 
-.timeline-date {
-    color: var(--primary-color);
-    font-weight: 600;
-    text-align: right;
-    padding-top: 5px;
-    font-size: 14px;
-}
-
 .timeline-content {
+    flex: 1;
     background: var(--card-bg);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 15px;
     padding: 30px;
     backdrop-filter: blur(10px);
+    transition: var(--transition);
+}
+
+.timeline-content:hover {
+    transform: translateX(5px);
+    border-color: var(--primary-color);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .timeline-content h3 {
-    font-size: 22px;
+    font-size: 24px;
     margin-bottom: 8px;
     font-family: 'Poppins', sans-serif;
     color: var(--text-primary);
@@ -683,47 +686,130 @@ body {
 
 .achievements-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
     margin-bottom: 60px;
 }
 
-.achievement-category h3 {
-    font-size: 28px;
-    margin-bottom: 30px;
-    font-family: 'Poppins', sans-serif;
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.achievement-category h3 i {
-    color: var(--primary-color);
-}
-
-.achievement-list {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.achievement-item {
-    display: flex;
-    gap: 20px;
+.achievement-card {
     background: var(--card-bg);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
-    padding: 25px;
+    border-radius: 20px;
+    padding: 35px 30px;
     transition: var(--transition);
     backdrop-filter: blur(10px);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
 }
 
-.achievement-item:hover {
-    transform: translateX(10px);
+.achievement-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--gradient-primary);
+}
+
+.achievement-card:nth-child(2)::before {
+    background: var(--gradient-secondary);
+}
+
+.achievement-card:nth-child(3)::before {
+    background: var(--gradient-gold);
+}
+
+.achievement-card:nth-child(4)::before {
+    background: var(--gradient-accent);
+}
+
+.achievement-card:hover {
+    transform: translateY(-10px);
     border-color: var(--primary-color);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
 
 .achievement-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    background: var(--gradient-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    color: white;
+    margin: 0 auto 25px;
+    box-shadow: 0 10px 30px rgba(99, 102, 241, 0.3);
+}
+
+.achievement-card:nth-child(2) .achievement-icon {
+    background: var(--gradient-secondary);
+    box-shadow: 0 10px 30px rgba(139, 92, 246, 0.3);
+}
+
+.achievement-card:nth-child(3) .achievement-icon {
+    background: var(--gradient-gold);
+    box-shadow: 0 10px 30px rgba(247, 151, 30, 0.3);
+}
+
+.achievement-card:nth-child(4) .achievement-icon {
+    background: var(--gradient-accent);
+    box-shadow: 0 10px 30px rgba(79, 172, 254, 0.3);
+}
+
+.achievement-card h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-primary);
+}
+
+.achievement-card p {
+    color: var(--text-secondary);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* Certifications Section */
+.certifications-section {
+    margin-top: 80px;
+}
+
+.certifications-section h3 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.certification-card {
+    background: var(--card-bg);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 30px;
+    transition: var(--transition);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.certification-card:hover {
+    transform: translateX(10px);
+    border-color: var(--primary-color);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.certification-icon {
     width: 50px;
     height: 50px;
     border-radius: 12px;
@@ -736,74 +822,28 @@ body {
     flex-shrink: 0;
 }
 
-.achievement-content h4 {
-    font-size: 18px;
+.certification-content h5 {
+    font-size: 17px;
     margin-bottom: 8px;
-    font-family: 'Poppins', sans-serif;
-}
-
-.achievement-content p {
-    color: var(--text-secondary);
-    font-size: 14px;
-    line-height: 1.6;
-}
-
-.certification-list {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.certification-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 15px;
-    background: var(--card-bg);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    padding: 20px;
-    transition: var(--transition);
-    backdrop-filter: blur(10px);
-}
-
-.certification-item:hover {
-    transform: translateX(10px);
-    border-color: var(--primary-color);
-}
-
-.certification-item i {
-    color: var(--primary-color);
-    font-size: 20px;
-    margin-top: 3px;
-}
-
-.certification-item h5 {
-    font-size: 16px;
-    margin-bottom: 5px;
     color: var(--text-primary);
+    font-weight: 600;
 }
 
-.certification-item span {
-    font-size: 13px;
+.certification-content span {
+    font-size: 14px;
     color: var(--text-muted);
 }
 
 /* Education Section within Achievements */
 .education-section {
-    margin-top: 60px;
+    margin-top: 80px;
 }
 
 .education-title {
-    font-size: 28px;
-    margin-bottom: 30px;
+    font-size: 36px;
+    margin-bottom: 40px;
     font-family: 'Poppins', sans-serif;
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.education-title i {
-    color: var(--primary-color);
+    text-align: center;
 }
 
 .education-grid {
@@ -816,7 +856,7 @@ body {
     background: var(--card-bg);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 15px;
-    padding: 30px;
+    padding: 35px 30px;
     text-align: center;
     transition: var(--transition);
     backdrop-filter: blur(10px);
@@ -825,18 +865,19 @@ body {
 .education-card:hover {
     transform: translateY(-5px);
     border-color: var(--primary-color);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
 }
 
 .education-icon {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     background: var(--gradient-primary);
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto 20px;
-    font-size: 26px;
+    font-size: 28px;
     color: white;
 }
 
@@ -848,20 +889,20 @@ body {
 
 .education-card .university {
     color: var(--text-secondary);
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     font-size: 15px;
 }
 
 .education-card .year {
     color: var(--text-muted);
     font-size: 14px;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 .education-card .grade {
     color: var(--primary-color);
-    font-size: 15px;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 /* ===== CONTACT SECTION ===== */
@@ -990,8 +1031,12 @@ body {
 
 /* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 1024px) {
-    .achievements-grid {
-        grid-template-columns: 1fr;
+    .timeline::before {
+        left: 180px;
+    }
+    
+    .timeline-date {
+        width: 140px;
     }
 }
 
@@ -1044,21 +1089,25 @@ body {
     }
     
     .timeline-item {
-        grid-template-columns: 40px 1fr;
-        padding-left: 0;
-    }
-    
-    .timeline-item:nth-child(even) .timeline-date,
-    .timeline-item:nth-child(even) .timeline-content {
-        grid-column: 2;
+        flex-direction: column;
+        padding-left: 50px;
     }
     
     .timeline-date {
         text-align: left;
+        width: 100%;
+        padding-top: 0;
+        margin-bottom: 10px;
     }
     
     .timeline-dot {
-        left: 20px;
+        position: absolute;
+        left: 11px;
+        margin-top: 0;
+    }
+    
+    .timeline-content {
+        margin-left: 0;
     }
 }
 
@@ -1088,6 +1137,10 @@ body {
     }
     
     .achievements-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .certifications-grid {
         grid-template-columns: 1fr;
     }
     
