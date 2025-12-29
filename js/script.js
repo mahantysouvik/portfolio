@@ -1,5 +1,5 @@
 // Typing effect
-const texts = ['Software Developer', 'Data Science Enthusiast', 'Problem Solver', 'Tech Innovator'];
+const texts = ['Senior Software Engineer', 'Backend Developer', 'AI Enthusiast', 'Problem Solver'];
 let count = 0;
 let index = 0;
 let currentText = '';
@@ -88,7 +88,7 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 // Observe elements
-const animateElements = document.querySelectorAll('.skill-card, .timeline-item, .contact-card');
+const animateElements = document.querySelectorAll('.skill-card, .timeline-item, .contact-card, .achievement-item, .certification-item, .education-card');
 animateElements.forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(30px)';
